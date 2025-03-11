@@ -1,9 +1,9 @@
 git init 
 touch .gitignore
-(*.sass
-bin/
-admin/
-config/)
+echo "*.sass" >> .gitignore
+echo "bin/" >> .gitignore
+echo "admin/" >> .gitignore
+echo "config/" >> .gitignore
 touch index.html style.css
 git add . 
 git status 
