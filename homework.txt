@@ -15,4 +15,5 @@ touch index.js index.html
 cd ..
 git checkout master
 git remote add origin https://github.com/DmitryLem/my-project.git
+git remote -v
 git push -u origin master
