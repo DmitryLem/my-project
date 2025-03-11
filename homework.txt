@@ -1,19 +1,38 @@
-git init 
+# Создание проекта 
+mkdir my-project
+cd my-project
+git init
+
+# Создание файла .gitignore
 touch .gitignore
 echo "*.sass" >> .gitignore
 echo "bin/" >> .gitignore
 echo "admin/" >> .gitignore
 echo "config/" >> .gitignore
+
+# Создание начальных файлов
 touch index.html style.css
-git add . 
-git status 
+
+# Добавление файлов в локальное хранилище
+git add .
+git status
 git commit -m "Add new project"
+
+# Создание новой ветки и переход в неё
 git checkout -b forum
+
+# Создание папки blog и файлов в ней
 mkdir blog
 cd blog
 touch index.js index.html
 cd ..
+
+# Возврат на основную ветку
 git checkout master
+
+# Подключение к удалённому репозиторию
 git remote add origin https://github.com/DmitryLem/my-project.git
 git remote -v
+
+# Загрузка основной ветки на удалённый репозиторий
 git push -u origin master
