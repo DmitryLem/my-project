@@ -1,0 +1,18 @@
+git init 
+touch .gitignore
+(*.sass
+bin/
+admin/
+config/)
+touch index.html style.css
+git add . 
+git status 
+git commit -m "Add new project"
+git checkout -b forum
+mkdir blog
+cd blog
+touch index.js index.html
+cd ..
+git checkout master
+git remote add origin https://github.com/DmitryLem/my-project.git
+git push -u origin master
